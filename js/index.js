@@ -8,7 +8,7 @@ formaingresar.addEventListener('submit', (e) => {
     auth.signInWithEmailAndPassword(correo, contrasena).then(() => {
         formaingresar.reset();
         formaingresar.querySelector('.error').innerHTML = '';
-        //  window.location="home.html";
+        window.location="./pages/suppliers.html";
     }).catch(err => {
         formaingresar.querySelector('.error').innerHTML = messageError(err.code);
     });
