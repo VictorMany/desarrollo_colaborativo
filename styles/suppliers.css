@@ -44,9 +44,15 @@
   position: absolute;
   border-radius: 90%;
   border: 6px solid white;
-  background-image: linear-gradient(-60deg, #4b7784 0%, #e0ecf0 100%);
+  background-image: linear-gradient(-60deg, #4b7784 0%, #b6ccd4 100%);
   top: 15px;
   left: 85px;
+}
+
+#avatar_img{
+  display: block;
+  margin: 0 auto;
+  padding-top: 8px;
 }
 
 .card-text {
