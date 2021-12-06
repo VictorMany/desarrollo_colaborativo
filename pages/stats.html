@@ -13,6 +13,13 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/charts.css" />
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/charts.js">
+
+    </script>
 </head>
 
 <body>
@@ -23,6 +30,24 @@
         <a href="#">Estadísticas</a>
         <div class="animation start-home"></div>
     </nav>
+
+    <!-- Loggout button -->
+
+    <a style="padding:10px;display:block;" href="http://androidcss.com/css/css3-floating-button-tutorial/"
+        target="_blank"></a>
+    <a href="#" class="float" onclick="logOut()">
+        <img src="../assets/logout.png" alt="logout icon" class="logout">
+    </a>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div" style="width: 800px; height: 500px;"></div>
+
+    <script src="../js/firebase.js"></script>
+    <script src="../utils/utils.js"></script>
 </body>
 
 </html>

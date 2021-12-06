@@ -1,0 +1,6 @@
+.chart-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100% auto; 
+    align-items: center;
+}
