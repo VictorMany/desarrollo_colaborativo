@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../styles/components/navBar.css" />
-    <link rel="stylesheet" href="../styles/suppliers.css" />
+    <link rel="stylesheet" href="../styles/components/logoutButton.css" />
+    <link rel="stylesheet" href="../styles/suppliers.scss" />
+
 </head>
 
 <body>
@@ -20,6 +25,254 @@
         <div class="animation start-home"></div>
     </nav>
 
+    <div class="grid">
+
+        <div>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-secondary" onclick="changeCards(1)">Textiles</button>
+                <button type="button" class="btn btn-secondary" onclick="changeCards(2)">Calzado</button>
+                <button type="button" class="btn btn-secondary" onclick="changeCards(3)">Accesorios</button>
+                <button type="button" class="btn btn-secondary" onclick="changeCards(4)">Empaque</button>
+            </div>
+        </div>
+
+        <div class="card-1" id="card1">
+            <div class="card">
+                <div class="img-avatar">
+                    <!--  aquí va un icono -->
+                </div>
+                <div class="card-text">
+                    <div class="portada">
+                    </div>
+                    <div class="title-total">
+                        <div class="title">Representante: Sarah Pulson</div>
+                        <h2>Brookwood Companies</h2>
+                        <div class="desc"><b>Origen:</b> Estados Unidos</div>
+                        <div class="desc"><b>Dirección:</b>1313 Disneyland Dr, Anaheim, CA 92802, EE. UU.</div>
+                        <div class="desc"><b>Descripción:</b> Brookwood Companies es la principal, fuente integrada por
+                            militares textiles, sintéticos táctico, y el rendimiento y la mezcla sintética de todo el
+                            mundo. </div>
+                        <div class="actions">
+                            <button><img src="../assets/phone.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/email.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/star.png" alt="" style="width: 20px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-avatar">
+                    <!--  aquí va un icono -->
+                </div>
+                <div class="card-text">
+                    <div class="portada portada-1">
+                    </div>
+                    <div class="title-total">
+                        <div class="title">Representante: Eduardo González</div>
+                        <h2>Cafetho Mantelería</h2>
+                        <div class="desc"><b>Origen:</b> Nuevo León, México</div>
+                        <div class="desc"><b>Dirección:</b>Avenida Fundidora y, Adolfo Prieto S/N, Obrera, 64010
+                            Monterrey, N.L.</div>
+                        <div class="desc"><b>Descripción:</b> Empresa Dedicada a la Fabricación de Texturas en Alto
+                            Gramaje, con la cual Obtenemos la Practicidad del Doble de Vida, Resistencia, Calidad y lo
+                            Novedoso de los Diseños.</div>
+                        <div class="actions">
+                            <button><img src="../assets/phone.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/email.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/star.png" alt="" style="width: 20px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-2" id="card2" style="display: none;">
+            <div class="card">
+                <div class="img-avatar">
+                    <!--  aquí va un icono -->
+                </div>
+                <div class="card-text">
+                    <div class="portada portada-2">
+                    </div>
+                    <div class="title-total">
+                        <div class="title">Representante: José Hernández</div>
+                        <h2>Calzados digodigo</h2>
+                        <div class="desc"><b>Origen:</b> España</div>
+                        <div class="desc"><b>Dirección:</b>Calle Puebla #144 entre Jalapa y Orizaba, Roma, 06700, España
+                        </div>
+                        <div class="desc"><b>Descripción:</b> Puedes encontrar todo tipo de calzado para tu zapatería
+                            online, desde estilos clásicos hasta deportivos y zapatos para el día a día. </div>
+                        <div class="actions">
+                            <button><img src="../assets/phone.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/email.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/star.png" alt="" style="width: 20px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-avatar">
+                    <!--  aquí va un icono -->
+                </div>
+                <div class="card-text">
+                    <div class="portada portada-3">
+                    </div>
+                    <div class="title-total">
+                        <div class="title">Representante: Ángel Piña</div>
+                        <h2>Calzanet</h2>
+                        <div class="desc"><b>Origen:</b> España</div>
+                        <div class="desc"><b>Dirección:</b> Calle Rufino Blanco, 2, 28028 Madrid, España
+                            Monterrey, N.L.</div>
+                        <div class="desc"><b>Descripción:</b>Calzanet no tiene mínimo de pedido, pero sí que cuentan con
+                            promociones en función del tamaño de los mismos, como por ejemplo el envío gratis para
+                            pedidos mayores a los 450€.</div>
+                        <div class="actions">
+                            <button><img src="../assets/phone.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/email.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/star.png" alt="" style="width: 20px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 2;">
+                <div class="img-avatar">
+                    <!--  aquí va un icono -->
+                </div>
+                <div class="card-text">
+                    <div class="portada portada-4">
+                    </div>
+                    <div class="title-total">
+                        <div class="title">Representante: Pierre LeClerc</div>
+                        <h2>ASTRÉYEE</h2>
+                        <div class="desc"><b>Origen:</b> Francia</div>
+                        <div class="desc"><b>Dirección:</b> Fashion Centre Lot 223
+                            70, Avenue Victor Hugo
+                            93300 Aubervilliers France
+                            Service Client </div>
+                        <div class="desc"><b>Descripción:</b> Una plataforma de venta al por mayor de zapatos, venta al
+                            por
+                            mayor en línea, entrega rápida y barata, pago seguro</div>
+                        <div class="actions">
+                            <button><img src="../assets/phone.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/email.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/star.png" alt="" style="width: 20px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-3" id="card3" style="display: none;">
+            <div class="card">
+                <div class="img-avatar">
+                    <!--  aquí va un icono -->
+                </div>
+                <div class="card-text">
+                    <div class="portada portada-5">
+                    </div>
+                    <div class="title-total">
+                        <div class="title">Representante: Edm Hur</div>
+                        <h2>MAALVA</h2>
+                        <div class="desc"><b>Origen:</b> Argelia</div>
+                        <div class="desc"><b>Dirección:</b>:
+                            Blvd. Miguel de Cervantes Saavedra, Granada, Miguel Hidalgo, 11529 Argelia</div>
+                        <div class="desc"><b>Descripción:</b> Cuentan con un amplio catálogo de productos disponibles
+                            para envío inmediato. </div>
+                        <div class="actions">
+                            <button><img src="../assets/phone.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/email.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/star.png" alt="" style="width: 20px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-4" id="card4" style="display: none;">
+            <div class="card">
+                <div class="img-avatar">
+                    <!--  aquí va un icono -->
+                </div>
+                <div class="card-text">
+                    <div class="portada portada-6">
+                    </div>
+                    <div class="title-total">
+                        <div class="title">Representante: Carl Johnson</div>
+                        <h2>Washington Box</h2>
+                        <div class="desc"><b>Origen:</b> Estados Unidos</div>
+                        <div class="desc"><b>Dirección:</b>Ave. Las Palmas # 126 Fracc. Industrial Las Palmas Santa
+                            Catarina Nuevo León México
+                        </div>
+                        <div class="desc"><b>Descripción:</b> Nuestro equipo de trabajo junto con nuestra tecnología de
+                            punta, es capaz de producir un amplio espectro de productos para empaque, desde Cajas
+                            Regulares hasta cajas de tamaño JUMBO en una sola pieza que requieren un proceso de
+                            producción y calidad más complejo. Nuestra alta capacidad instalada nos permite imprimir en
+                            2 tintas, troquelar, y ensamblar con calidad, velocidad y precisión cualquier producto de
+                            cartón corrugado </div>
+                        <div class="actions">
+                            <button><img src="../assets/phone.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/email.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/star.png" alt="" style="width: 20px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-avatar">
+                    <!--  aquí va un icono -->
+                </div>
+                <div class="card-text">
+                    <div class="portada portada-7">
+                    </div>
+                    <div class="title-total">
+                        <div class="title">Representante: Roberto Salazar</div>
+                        <h2>GAMAPLASTIC</h2>
+                        <div class="desc"><b>Origen:</b> México</div>
+                        <div class="desc"><b>Dirección:</b>Vidal Alcocer #72, Centro, Ciudad de México, CDMX</div>
+                        <div class="desc"><b>Descripción:</b>Es una empresa dedicada a la fabricación de bolsas de
+                            polietileno en rollo, en medidas desde los 15 cm hasta 70 cm de ancho, en el calibre que el
+                            cliente requiera.</div>
+                        <div class="actions">
+                            <button><img src="../assets/phone.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/email.png" alt="" style="width: 20px;"></button>
+                            <button><img src="../assets/star.png" alt="" style="width: 20px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Loggout button -->
+    <a style="padding:10px;display:block;" href="http://androidcss.com/css/css3-floating-button-tutorial/"
+        target="_blank"></a>
+    <a href="#" class="float" onclick="logOut()">
+        <img src="../assets/logout.png" alt="logout icon" class="logout">
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+    <script src="../js/firebase.js"></script>
+    <script src="../utils/utils.js"></script>
+    <script src="../js/suppliers.js"></script>
 </body>
 
 </html>

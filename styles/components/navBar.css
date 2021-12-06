@@ -1,73 +1,75 @@
 nav {
-    margin: 27px auto 0;
-    position: relative;
-    width: 260px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 8px;
-    font-size: 0;
-    box-shadow: 0px 0px 4px 3px rgb(206, 206, 206);
-  }
-  nav a {
-    line-height: 50px;
-    height: 100%;
-    font-size: 15px;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: #000;
-    cursor: pointer;
-  }
-  nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    transition: all 0.5s ease 0s;
-    border-radius: 8px;
-  }
-  a:nth-child(1) {
-    width: 130px;
-  }
-  a:nth-child(2) {
-    width: 130px;
-  }
-  nav .start-home,
-  a:nth-child(1):hover ~ .animation {
-    width: 130px;
-    left: 0;
-    background: linear-gradient(to right, #b9ced1, #c7d0d1);
-  }
-  nav .start-about,
-  a:nth-child(2):hover ~ .animation {
-    width: 130px;
-    left: 130px;
-    background: linear-gradient(to right, #c7d0d1, #b9ced1);
-  }
+  margin: 27px auto 0;
+  position: relative;
+  width: 260px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 0;
+  box-shadow: 0px 0px 4px 3px rgb(206, 206, 206);
   
-  body {
-    font-size: 12px;
-    font-family: sans-serif;
-    background: #fff;
-    font-family: "Poppins", sans-serif;
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 500;
-  }
   
-  p {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    
-  }
-  
-  span {
-    color: #2bd6b4;
-  }
-  
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  color: inherit;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 130px;
+}
+a:nth-child(2) {
+  width: 130px;
+}
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 130px;
+  left: 0;
+  background: linear-gradient(to right, #b9ced1, #c7d0d1);
+}
+nav .start-about,
+a:nth-child(2):hover ~ .animation {
+  width: 130px;
+  left: 130px;
+  background: linear-gradient(to right, #c7d0d1, #b9ced1);
+  color: inherit;
+}
+
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background: #fff;
+}
+
+p {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+span {
+  color: #2bd6b4;
+}
